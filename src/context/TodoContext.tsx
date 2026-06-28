@@ -7,7 +7,7 @@ export const TodoProvider = ({ children }: any) => {
   const [todos, setTodo] = useState([]);
 
   const fetchTodos = async () => {
-    const res = await axios.get("http://localhost:5000/api/todo");
+    const res = await axios.get("http://localhost:5000/api/v1/todo");
     setTodo(res.data);
   };
 
